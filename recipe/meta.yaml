@@ -1,5 +1,5 @@
 {% set name = "imageai" %}
-{% set version = "2.1.5" %}
+{% set version = "2.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 210f2e6af801e41085becb5ca19f710f0699fc9818018571a72f407b2a97ec31
+  sha256: 7c57922ba2724da522a5ee831df5aa83120ff3222704860aecafba454c727e1c
 
 build:
   noarch: python
@@ -15,7 +15,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  host: 
+  host:
     - pip
     - python
   run:
@@ -64,7 +64,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "A python library built to empower developers to build applications and systems  with self-contained Computer Vision capabilities"
+  summary: A python library built to empower developers to build applications and systems  with self-contained Computer Vision capabilities
   dev_url: https://github.com/OlafenwaMoses/ImageAI
 
 extra:
