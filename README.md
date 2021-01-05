@@ -5,11 +5,11 @@ Home: https://github.com/OlafenwaMoses/ImageAI
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/imageai-feedstock/blob/master/LICENSE.txt)
 
 Summary: A python library built to empower developers to build applications and systems  with self-contained Computer Vision capabilities
 
-
+Development: https://github.com/OlafenwaMoses/ImageAI
 
 Current build status
 ====================
