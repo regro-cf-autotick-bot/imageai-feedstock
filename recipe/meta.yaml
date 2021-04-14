@@ -49,10 +49,6 @@ test:
     - imageai.Detection.keras_retinanet.utils
     - imageai.Prediction
     - imageai.Prediction.Custom
-    - imageai.Prediction.DenseNet
-    - imageai.Prediction.InceptionV3
-    - imageai.Prediction.ResNet
-    - imageai.Prediction.SqueezeNet
 
 about:
   home: https://github.com/OlafenwaMoses/ImageAI
