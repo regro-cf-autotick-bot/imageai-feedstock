@@ -1,5 +1,5 @@
 {% set name = "imageai" %}
-{% set version = "2.1.5" %}
+{% set version = "2.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 210f2e6af801e41085becb5ca19f710f0699fc9818018571a72f407b2a97ec31
+  sha256: 7c57922ba2724da522a5ee831df5aa83120ff3222704860aecafba454c727e1c
 
 build:
   noarch: python
@@ -15,15 +15,15 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  host: 
+  host:
     - pip
-    - python
+    - python >=3.6
   run:
     - h5py
     - matplotlib-base
     - numpy
     - pillow
-    - python
+    - python >=3.6
     - scipy
     - opencv
     - keras
@@ -38,15 +38,10 @@ test:
     - imageai.Detection
     - imageai.Detection.Custom
     - imageai.Detection.Custom.utils
-    - imageai.Detection.YOLOv3
-    - imageai.Detection.keras_resnet
-    - imageai.Detection.keras_resnet.benchmarks
-    - imageai.Detection.keras_resnet.blocks
-    - imageai.Detection.keras_resnet.classifiers
-    - imageai.Detection.keras_resnet.layers
-    - imageai.Detection.keras_resnet.models
+    - imageai.Detection.YOLO
     - imageai.Detection.keras_retinanet
     - imageai.Detection.keras_retinanet.backend
+    - imageai.Detection.keras_retinanet.bin
     - imageai.Detection.keras_retinanet.callbacks
     - imageai.Detection.keras_retinanet.layers
     - imageai.Detection.keras_retinanet.models
@@ -54,10 +49,8 @@ test:
     - imageai.Detection.keras_retinanet.utils
     - imageai.Prediction
     - imageai.Prediction.Custom
-    - imageai.Prediction.DenseNet
-    - imageai.Prediction.InceptionV3
-    - imageai.Prediction.ResNet
-    - imageai.Prediction.SqueezeNet
+    - imageai.Classification
+    - imageai.Classification.Custom
 
 about:
   home: https://github.com/OlafenwaMoses/ImageAI
