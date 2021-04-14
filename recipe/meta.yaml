@@ -49,6 +49,8 @@ test:
     - imageai.Detection.keras_retinanet.utils
     - imageai.Prediction
     - imageai.Prediction.Custom
+    - imageai.Classification
+    - imageai.Classification.Custom
 
 about:
   home: https://github.com/OlafenwaMoses/ImageAI
