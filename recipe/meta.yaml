@@ -41,6 +41,7 @@ test:
     - imageai.Detection.YOLO
     - imageai.Detection.keras_retinanet
     - imageai.Detection.keras_retinanet.backend
+    - imageai.Detection.keras_retinanet.bin
     - imageai.Detection.keras_retinanet.callbacks
     - imageai.Detection.keras_retinanet.layers
     - imageai.Detection.keras_retinanet.models
