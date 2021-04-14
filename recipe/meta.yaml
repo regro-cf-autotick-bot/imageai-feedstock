@@ -38,7 +38,7 @@ test:
     - imageai.Detection
     - imageai.Detection.Custom
     - imageai.Detection.Custom.utils
-    - imageai.Detection.YOLOv3
+    - imageai.Detection.YOLO
     - imageai.Detection.keras_resnet
     - imageai.Detection.keras_resnet.benchmarks
     - imageai.Detection.keras_resnet.blocks
