@@ -6,24 +6,24 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 7c57922ba2724da522a5ee831df5aa83120ff3222704860aecafba454c727e1c
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - h5py
     - matplotlib-base
     - numpy
     - pillow
-    - python >=3.6
+    - python >={{ python_min }}
     - scipy
     - opencv
     - keras
@@ -33,6 +33,8 @@ requirements:
     - tensorflow
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - imageai
     - imageai.Detection
